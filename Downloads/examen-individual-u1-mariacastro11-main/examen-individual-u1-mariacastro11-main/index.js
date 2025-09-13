@@ -10,7 +10,7 @@ function mostrarPost (posts) {
 
     // imagen 
     const img = document.createElement ("img");
-    img.src = https://picsum.photos/200/200?random=id 
+    img.src = https//picsum.photos/200/200?random=id 
 
     //nombre 
     const user = document.createElement ("h2");
@@ -24,7 +24,7 @@ function mostrarPost (posts) {
     card.appendChild(descripcion);
 
     //button like
-    const.buttonLike =document.crateElement ("button");
+    const buttonLike =document.createElement ("button");
     button.textContent ="like"
     button.classList = 
 
@@ -36,7 +36,49 @@ function mostrarPost (posts) {
       btnLike.textContent = "like";
       btnLike.disabled = true;
     });
-    card.appendChild(btnCarrito);
+    card.appendChild(btnLike);
+
+    //comentarios 
+
+    async function loadPosts() {
+  try {
+    const response = await fetch("posts.json");
+    if (!response.ok) throw new Error("No se pudo cargar el JSON externo");
+    posts = await response.json();
+  } catch (error) {
+    console.warn("Usando datos de respaldo:", error.message);
+    posts = fallbackPosts;
+
+  }
+
+
+  // Texto
+    const text = document.createElement("p");
+    text.className = "post-text";
+    text.textContent = post.text;
+
+    // Imagen
+    const image = document.createElement("img");
+    image.src = post.image;
+
+    // Likes y botones
+    const actions = document.createElement("div");
+    actions.className = "post-actions";
+
+    const likeBtn = document.createElement("button");
+    likeBtn.className = "like-btn";
+    likeBtn.textContent = "Like";
+    likeBtn.addEventListener("click", () => {
+      post.likes++;
+      localStorage.setItem(`likes_${post.id}`, post.likes);
+      renderPosts(); 
+    });
+
+
+
+
+
+
 
 
 
