@@ -1,29 +1,124 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #570b4d;
+  color: #333;
+  line-height: 1.5;
+}
+
 
 #app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #9f9f9f;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
+
+.post {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
 }
 
-.publicacion {
-    background: #fff
-    border-radious: 10px;
-    box ::shadow: 0x 
+.post:hover {
+  transform: translateY(-3px);
 }
+
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-autor {
+  font-weight: bold;
+  color: #1877f2;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+
+.post-text {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background;
+}
+
+button.like-btn {
+  background: #1877f2;
+  color: white;
+}
+
+button.like-btn:hover {
+  background: #145dbf;
+}
+
+button.comment-toggle {
+  background: #e4e6eb;
+}
+
+button.comment-toggle:hover {
+  background: #d8dadf;
+}
+
+
+.likes {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+.comments {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.comment {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
 
 
 

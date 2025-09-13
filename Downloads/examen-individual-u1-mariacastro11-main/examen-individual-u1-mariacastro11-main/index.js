@@ -20,7 +20,26 @@ function mostrarPost (posts) {
     //descripcion
 
     const descripcion = document.createElement ("p");
-    
+    descripcion.textContent = producto.descripcion;
+    card.appendChild(descripcion);
+
+    //button like
+    const.buttonLike =document.crateElement ("button");
+    button.textContent ="like"
+    button.classList = 
+
+    // Button like
+    const btnLike = document.createElement("button");
+    btnLike.textContent = "like";
+    btnLike.classList.add("like");
+    btnLike.addEventListener("click", () => {
+      btnLike.textContent = "like";
+      btnLike.disabled = true;
+    });
+    card.appendChild(btnCarrito);
+
+
+
 
 
     }
