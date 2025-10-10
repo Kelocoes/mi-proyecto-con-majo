@@ -1,0 +1,20 @@
+{
+    "saldoInicial": 10750600,
+    "bolsillos": [
+        {
+            "id": 1,
+            "nombre": "Viajes",
+            "saldo": 1500000
+        },
+        {
+            "id": 2,
+            "nombre": "Educación",
+            "saldo": 2000000
+        },
+        {
+            "id": 3,
+            "nombre": "Emergencias",
+            "saldo": 500000
+        }
+    ]
+}
