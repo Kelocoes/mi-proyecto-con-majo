@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<prefs>
+	<property key="ccd.container.firstlaunch">true</property>
+	<property key="appsPanelVisibilityAnalytics">enabled</property>
+	<property key="CCDHome_STATUS_LIGHT">true</property>
+</prefs>

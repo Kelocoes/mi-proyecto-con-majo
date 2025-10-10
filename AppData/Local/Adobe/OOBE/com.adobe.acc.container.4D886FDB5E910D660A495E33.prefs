@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<prefs>
+	<property key="ccd.container.firstlaunch">true</property>
+	<property key="appsPanelVisibilityAnalytics">enabled</property>
+	<property key="CCDQuickActions_STATUS_LIGHT">true</property>
+	<property key="CCDQuickActionsTab">true</property>
+	<property key="CCDHome_STATUS_LIGHT">true</property>
+	<property key="showTour.IDSN">1</property>
+	<property key="showTour">1</property>
+	<property key="showTour.AEFT">1</property>
+	<property key="CCD_MARKETPLACE_NEW_STATUS_LIGHT">OFF</property>
+	<property key="ARSGuid">d680d304-83d3-47d4-b7d7-467927c06a30</property>
+	<property key="ccd.container.whatsNewModal.GENERAL-ALL-APP-ANY-MAX-Miami-PHSP-WIN-CCD-20240916">GENERAL-ALL-APP-ANY-MAX-Miami-PHSP-WIN-CCD-20240916</property>
+	<property key="ccd.container.whatsNewModal.2">2</property>
+	<property key="PushDeviceID">485172f0-a523-4d62-9c78-4807ec3ced44</property>
+</prefs>
